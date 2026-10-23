@@ -257,13 +257,13 @@ footer p:last-child { text-align: right; }
 .home .site-header nav a { text-shadow: none; }
 .home .nav-contact { border-color: var(--line); }
 .home .menu-button { color: var(--ink); border-color: var(--line); }
-.home .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: max(760px, 100svh); color: var(--ink); background: var(--paper); }
+.home .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: max(380px, 50svh); color: var(--ink); background: var(--paper); }
 .home .hero > img { left: 0; right: 0; width: 100%; object-position: center; }
 .home .hero-shade { background: linear-gradient(90deg, var(--paper) 0%, rgba(251,250,246,.94) 20%, rgba(251,250,246,.5) 36%, rgba(251,250,246,0) 58%); }
-.home .hero-content { position: relative; z-index: 1; left: auto; bottom: auto; width: 100%; padding: 150px 0 110px 7vw; }
-.home .hero h1 { font-size: clamp(50px, 5.6vw, 88px); line-height: 1.12; }
+.home .hero-content { position: relative; z-index: 1; left: auto; bottom: auto; width: 100%; padding: 110px 0 60px 7vw; }
+.home .hero h1 { font-size: clamp(36px, 4vw, 64px); line-height: 1.12; }
 .home .hero .eyebrow.light { color: var(--clay); letter-spacing: .14em; }
-.home .hero-content > p:not(.eyebrow) { max-width: 430px; font-size: 18px; }
+.home .hero-content > p:not(.eyebrow) { max-width: 430px; margin: 18px 0 22px; font-size: 16px; }
 .home .hero .button-light { color: white; background: var(--green); }
 .home .hero-note { color: var(--green); background: rgba(251,250,246,.9); padding: 8px 12px; border-radius: 3px; }
 @media (max-width: 900px) {
