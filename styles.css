@@ -219,3 +219,33 @@ footer p:last-child { text-align: right; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Presentation: nature, technology and craftsmanship */
+.capabilities { background: var(--cream); }
+.capabilities-heading { display: grid; grid-template-columns: 1.2fr 1fr; gap: 7vw; align-items: end; margin-bottom: 60px; }
+.capabilities-heading > p { max-width: 520px; margin: 0; font-size: 18px; line-height: 1.7; }
+.capability-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+.capability { border-top: 1px solid var(--line); padding-top: 24px; }
+.capability-number { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 26px; border-radius: 50%; color: white; background: var(--green); font-size: 13px; letter-spacing: .08em; }
+.capability:nth-child(2) .capability-number { background: var(--clay); }
+.capability:nth-child(4) .capability-number { color: var(--ink); background: #d5cbb8; }
+.capability h3 { font-size: clamp(25px, 2.3vw, 34px); line-height: 1.12; }
+.capability p, .capability li { font-size: 15px; line-height: 1.65; }
+.capability p { margin: 20px 0 16px; }
+.capability ul { padding-left: 18px; margin: 0; }
+.capability li + li { margin-top: 7px; }
+.materials-panel { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; margin: 64px 0; padding: 40px; background: #dedfce; border-radius: 8px; }
+.materials-panel p:last-child { margin-bottom: 0; line-height: 1.65; }
+.material-list { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; padding: 0; margin: 0; }
+.material-list li { padding: 13px 19px; border: 1px solid rgba(33,58,47,.25); border-radius: 24px; font-size: 16px; }
+.material-list small { display: block; margin-top: 4px; font-size: 11px; }
+.workflow > h3 { font-size: 40px; }
+.workflow-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; padding: 0; margin: 32px 0 40px; list-style: none; counter-reset: step; }
+.workflow-steps li { border-top: 1px solid var(--line); padding-top: 20px; counter-increment: step; }
+.workflow-steps li::before { content: "0" counter(step); color: var(--clay); font-size: 12px; letter-spacing: .1em; }
+.workflow-steps h4 { margin: 15px 0 12px; font-family: var(--serif); font-weight: 500; font-size: 25px; }
+.workflow-steps p { margin: 0; font-size: 15px; line-height: 1.65; }
+.contact-intro { margin: 24px auto 0; padding: 0 20px; line-height: 1.65; font-size: 18px; }
+@media (max-width: 1100px) { .capability-grid, .workflow-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; } }
+@media (max-width: 900px) { .capabilities-heading, .materials-panel { grid-template-columns: 1fr; gap: 30px; } .materials-panel { padding: 30px; } }
+@media (max-width: 620px) { .capability-grid, .workflow-steps { grid-template-columns: 1fr; } .capability-number { margin-bottom: 18px; } .materials-panel { padding: 25px; margin: 45px 0; } }
