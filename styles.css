@@ -6,12 +6,13 @@
   --paper: #fbfaf6;
   --clay: #b65f41;
   --line: rgba(26, 33, 29, .16);
-  --serif: "Fraunces", Georgia, serif;
+  --serif: var(--sans);
   --sans: "DM Sans", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+button, input, select, textarea { font: inherit; }
 body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); }
 img { display: block; width: 100%; }
 a { color: inherit; }
@@ -28,7 +29,7 @@ a { color: inherit; }
 .hero-content { position: absolute; left: 8vw; bottom: 12vh; width: min(780px, 84vw); }
 .eyebrow { margin: 0 0 18px; color: var(--clay); font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
 .eyebrow.light { color: #e6dbbd; }
-h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 500; line-height: .98; letter-spacing: -.04em; }
+h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 500; line-height: 1.12; letter-spacing: -.02em; }
 h1 { font-size: clamp(58px, 8vw, 118px); }
 h2 { font-size: clamp(44px, 5.5vw, 78px); }
 h3 { font-size: 31px; line-height: 1.05; }
@@ -252,18 +253,19 @@ footer p:last-child { text-align: right; }
 
 /* A light, photographic introduction inspired by the presentation */
 .home .site-header { position: relative; color: var(--ink); background: var(--paper); }
+.home .site-header .brand-logo { filter: brightness(0) saturate(100%) invert(18%) sepia(18%) saturate(845%) hue-rotate(99deg) brightness(94%) contrast(89%); }
 .home .site-header nav a { text-shadow: none; }
 .home .nav-contact { border-color: var(--line); }
 .home .menu-button { color: var(--ink); border-color: var(--line); }
 .home .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: 660px; color: var(--ink); background: var(--paper); }
-.home .hero > img { left: auto; right: 0; width: 68%; object-position: 58% center; }
-.home .hero-shade { background: linear-gradient(90deg, var(--paper) 12%, rgba(251,250,246,.97) 26%, rgba(251,250,246,.8) 39%, rgba(251,250,246,0) 65%); }
+.home .hero > img { left: 0; right: 0; width: 100%; object-position: center; }
+.home .hero-shade { background: linear-gradient(90deg, var(--paper) 0%, rgba(251,250,246,.94) 20%, rgba(251,250,246,.5) 36%, rgba(251,250,246,0) 58%); }
 .home .hero-content { position: relative; z-index: 1; left: auto; bottom: auto; width: 100%; padding: 80px 0 90px 7vw; }
-.home .hero h1 { font-size: clamp(50px, 5.6vw, 88px); line-height: 1.02; }
+.home .hero h1 { font-size: clamp(50px, 5.6vw, 88px); line-height: 1.12; }
 .home .hero .eyebrow.light { color: var(--clay); letter-spacing: .14em; }
 .home .hero-content > p:not(.eyebrow) { max-width: 430px; font-size: 18px; }
 .home .hero .button-light { color: white; background: var(--green); }
-.home .hero-note { color: white; text-shadow: 0 1px 5px rgba(0,0,0,.8); }
+.home .hero-note { color: var(--green); background: rgba(251,250,246,.9); padding: 8px 12px; border-radius: 3px; }
 @media (max-width: 900px) {
   .home .hero { display: flex; flex-direction: column; min-height: auto; }
   .home .hero-content { order: 1; padding: 50px 6vw 42px; }
