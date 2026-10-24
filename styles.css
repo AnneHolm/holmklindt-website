@@ -433,11 +433,11 @@ footer a:not(.brand) { text-underline-offset: 4px; }
 .presentation-examples .print-card:hover img { transform: scale(1.015); filter: none; }
 
 /* Workshop sketches appear only on the white backgrounds. */
-.home .hero, .intro, .projects, .about, .page-intro, .page-gallery {
+.home .hero, .projects, .about, .page-intro, .page-gallery {
   position: relative;
   isolation: isolate;
 }
-.home .hero::before, .intro::before, .projects::before,
+.home .hero::before, .projects::before,
 .about::before, .page-intro::before, .page-gallery::before {
   content: "";
   position: absolute;
@@ -452,13 +452,22 @@ footer a:not(.brand) { text-underline-offset: 4px; }
 }
 .projects::before, .page-gallery::before { background-position: right 60px; }
 @media (max-width: 620px) {
-  .home .hero::before, .intro::before, .projects::before,
+  .home .hero::before, .projects::before,
   .about::before, .page-intro::before, .page-gallery::before {
     background-size: 860px 860px;
     opacity: .11;
   }
 }
 @media print {
-  .home .hero::before, .intro::before, .projects::before,
+  .home .hero::before, .projects::before,
   .about::before, .page-intro::before, .page-gallery::before { display: none; }
 }
+
+/* A quiet green introduction between the white hero and sand services. */
+.intro {
+  color: var(--paper);
+  background: var(--green);
+  border-top: 0;
+}
+.intro .eyebrow { color: #dce4d8; }
+.intro-copy { color: #f0f1e9; }
