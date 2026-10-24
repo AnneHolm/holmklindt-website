@@ -432,12 +432,13 @@ footer a:not(.brand) { text-underline-offset: 4px; }
 .electronics-feature .presentation-art:hover img,
 .presentation-examples .print-card:hover img { transform: scale(1.015); filter: none; }
 
-/* Faint workshop sketches sit behind the content on the light sections. */
-.home .hero, .intro, .capabilities, .projects, .about, .company,
-.page-intro, .page-gallery { position: relative; isolation: isolate; }
-.home .hero::before, .intro::before, .capabilities::before,
-.projects::before, .about::before, .company::before,
-.page-intro::before, .page-gallery::before {
+/* Workshop sketches appear only on the white backgrounds. */
+.home .hero, .intro, .projects, .about, .page-intro, .page-gallery {
+  position: relative;
+  isolation: isolate;
+}
+.home .hero::before, .intro::before, .projects::before,
+.about::before, .page-intro::before, .page-gallery::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -449,18 +450,15 @@ footer a:not(.brand) { text-underline-offset: 4px; }
   background-position: center top;
   opacity: .15;
 }
-.capabilities::before, .company::before { background-position: 170px 80px; }
 .projects::before, .page-gallery::before { background-position: right 60px; }
 @media (max-width: 620px) {
-  .home .hero::before, .intro::before, .capabilities::before,
-  .projects::before, .about::before, .company::before,
-  .page-intro::before, .page-gallery::before {
+  .home .hero::before, .intro::before, .projects::before,
+  .about::before, .page-intro::before, .page-gallery::before {
     background-size: 860px 860px;
     opacity: .11;
   }
 }
 @media print {
-  .home .hero::before, .intro::before, .capabilities::before,
-  .projects::before, .about::before, .company::before,
-  .page-intro::before, .page-gallery::before { display: none; }
+  .home .hero::before, .intro::before, .projects::before,
+  .about::before, .page-intro::before, .page-gallery::before { display: none; }
 }
