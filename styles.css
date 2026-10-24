@@ -447,7 +447,7 @@ footer a:not(.brand) { text-underline-offset: 4px; }
   background-repeat: repeat;
   background-size: 1120px 1120px;
   background-position: center top;
-  opacity: .10;
+  opacity: .15;
 }
 .capabilities::before, .company::before { background-position: 170px 80px; }
 .projects::before, .page-gallery::before { background-position: right 60px; }
@@ -456,7 +456,7 @@ footer a:not(.brand) { text-underline-offset: 4px; }
   .projects::before, .about::before, .company::before,
   .page-intro::before, .page-gallery::before {
     background-size: 860px 860px;
-    opacity: .075;
+    opacity: .11;
   }
 }
 @media print {
