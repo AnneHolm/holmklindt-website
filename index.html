@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="HolmKlindt – fra idé til færdig løsning. 3D-design, print, laser, elektronik og træarbejde med et personligt udgangspunkt tæt på naturen.">
-  <meta name="theme-color" content="#213a2f">
+  <meta name="theme-color" content="#f8f7f3">
   <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
   <title>HolmKlindt</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,37 +13,39 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="home">
+  <a class="skip-link" href="#main-content">Gå til indhold</a>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="HolmKlindt, gå til toppen">
+    <a class="brand" href="index.html" aria-label="HolmKlindt, gå til toppen">
       <img class="brand-logo" src="assets/logo/holmklindt-monogram.svg" alt="">
       <span>HolmKlindt</span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
     <nav id="navigation" aria-label="Primær navigation">
-      <a href="#ydelser">Det kan vi hjælpe med</a>
-      <a href="#projekter">Værkstedet</a>
-      <a href="#om-os">Om os</a>
-      <a class="nav-contact" href="mailto:hej@holmklindt.dk">Skriv til os</a>
+      <a href="index.html#ydelser">Det kan vi hjælpe med</a>
+      <a href="index.html#projekter">Værkstedet</a>
+      <a href="index.html#om-os">Om os</a>
+      <a class="nav-contact" href="index.html#kontakt">Kontakt</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main id="main-content">
     <section class="hero">
-      <img src="assets/forside/house-hero-reference.jpg" alt="Fotorealistisk motiv af vores bindingsværkshus med stråtag, grøn have og stenen med husnummer 13">
+      <img src="assets/forside/house-hero.jpg" alt="Vores bindingsværkshus med stråtag omgivet af have og grønne træer" width="1510" height="1041" fetchpriority="high">
       <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow light">Natur · Teknik · Kreativitet</p>
-        <h1>Fra idé til<br>færdig løsning.</h1>
-        <p>3D-design, print, laser og tekniske specialløsninger – skabt med hænderne, med omtanke for funktion og holdbarhed.</p>
-        <a class="button button-light" href="#ydelser">Se hvad vi kan hjælpe med <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow light">Et lille værksted. En verden af idéer.</p>
+        <h1>Gode idéer.<br>Skabt med omtanke.</h1>
+        <p>Vi er Anne og Bente. Fra vores værksted på Sjælland skaber vi 3D-print, personlige ting og praktiske løsninger – med nysgerrighed og hænderne godt skruet på.</p>
+        <a class="button button-light" href="#ydelser">Se hvad vi kan hjælpe med <svg class="link-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16 16 4M4 4h12v12"/></svg></a>
+        <a class="hero-personal-link" href="#om-os">Mød os bag HolmKlindt <span aria-hidden="true">↓</span></a>
       </div>
-      <p class="hero-note">HolmKlindt · Sjælland</p>
+      <p class="hero-note">Hjemme ved skoven. Med plads til at skabe.</p>
     </section>
 
     <section class="intro section" id="velkommen">
       <div>
         <p class="eyebrow">Velkommen til HolmKlindt</p>
-        <h2>Inspireret af naturen.<br>Skabt med moderne teknologi.</h2>
+        <h2>Håndværk, teknologi<br>og lidt af os.</h2>
       </div>
       <div class="intro-copy">
         <p>HolmKlindt er vores lille værksted for idéer, løsninger og det, der bliver skabt med hænderne. Vi kombinerer naturens materialer med 3D-design, print, laser og elektronik.</p>
@@ -73,7 +75,7 @@
           <h3>Når teknik og<br>håndværk mødes.</h3>
           <p>Et kabinet skal både beskytte elektronikken og passe til den opgave, det skal løse. Her mødes printplade, et robust kabinet og et personligt trælåg i én samlet idé.</p>
           <p>Vi arbejder med design, materialevalg og montage – med plads til tilslutninger, fastgørelse og de detaljer, der gør løsningen brugbar.</p>
-          <a class="button button-dark" href="mailto:hej@holmklindt.dk">Tal med os om din løsning <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="mailto:hej@holmklindt.dk">Tal med os om din løsning <svg class="link-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16 16 4M4 4h12v12"/></svg></a>
         </div>
       </div>
       <div class="presentation-examples" aria-label="Illustrerede eksempler fra præsentationen">
@@ -94,7 +96,7 @@
           <li><span class="workflow-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m32 7 23 13v26L32 59 9 46V20Z M9 20l23 13 23-13 M32 33v26 M21 13l23 13v13l-8-4V22"/></svg></span><h4>Færdig løsning</h4><p>Du får en løsning, der er tilpasset dit behov og klar til at blive brugt.</p></li>
         </ol>
       </div>
-      <a class="button button-dark" href="mailto:hej@holmklindt.dk">Fortæl os om din idé <span aria-hidden="true">↗</span></a>
+      <a class="button button-dark" href="mailto:hej@holmklindt.dk">Fortæl os om din idé <svg class="link-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16 16 4M4 4h12v12"/></svg></a>
     </section>
 
     <section class="projects section" id="projekter">
@@ -168,6 +170,22 @@
       </div>
     </section>
 
+    <section class="company section" id="kontakt" aria-labelledby="company-title">
+      <div>
+        <p class="eyebrow">Firma &amp; kontakt</p>
+        <h2 id="company-title">Din idé begynder<br>med en snak.</h2>
+        <p class="company-intro">En reservedel, en personlig gave eller noget helt tredje? Skriv lidt om det, du har i tankerne. Så finder vi sammen ud af mulighederne.</p>
+        <a class="button button-dark" href="mailto:hej@holmklindt.dk">Skriv til Anne og Bente <svg class="link-arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16 16 4M4 4h12v12"/></svg></a>
+      </div>
+      <dl class="company-details">
+        <div><dt>Navn</dt><dd>HolmKlindt</dd></div>
+        <div><dt>Menneskene bag</dt><dd>Anne &amp; Bente</dd></div>
+        <div><dt>Vi holder til</dt><dd>Sjælland</dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:hej@holmklindt.dk">hej@holmklindt.dk</a></dd></div>
+        <div><dt>Det arbejder vi med</dt><dd>3D-design &amp; print, laser &amp; skæring,<br>elektronik &amp; teknik og træarbejde</dd></div>
+      </dl>
+    </section>
+
     <section class="closing">
       <img src="assets/afslutning/house-front.webp" alt="Bindingsværkshuset set fra vejen" loading="lazy">
       <div class="closing-shade"></div>
@@ -181,8 +199,8 @@
   </main>
 
   <footer>
-    <a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/logo/holmklindt-monogram.svg" alt=""><span>HolmKlindt</span></a>
-    <p>Idéer · Håndværk · Funktion – tæt på naturen.</p>
+    <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/logo/holmklindt-monogram.svg" alt=""><span>HolmKlindt</span></a>
+    <p>Anne &amp; Bente · Sjælland · <a href="mailto:hej@holmklindt.dk">hej@holmklindt.dk</a></p>
     <p>© <span id="year"></span> HolmKlindt</p>
   </footer>
   <script src="script.js"></script>
